@@ -65,7 +65,7 @@ public class ChangeTextInDOCXFile {
         try {
             fileHelper.replaceFileInZip(outDocxZipTempl, outDocXML, docXMLInZip);
         } catch (IOException ex) {
-            ex.printStackTrace();
+            System.out.println(ex);
         }
         
         //5.
