@@ -60,20 +60,12 @@ public class ChangeTextInDOCXFile {
             System.out.println(ex);
         }
 
-        
-        try {
-            fileHelper.testTest();
-        } catch (IOException ex) {
-            System.out.println(ex);
-        }
-        
-        
         //4.
-        docXMLInZip = "word/document.xml";
+        docXMLInZip = "word//document.xml";
         try {
             fileHelper.replaceFileInZip(outDocxZipTempl, outDocXML, docXMLInZip);
         } catch (IOException ex) {
-            System.out.println(ex);
+            ex.printStackTrace();
         }
         
         //5.
